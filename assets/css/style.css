@@ -37,14 +37,16 @@ h6 {
   color: #000;
   font-weight: 300;
 }
-
 h1 {
+  font-size: 45px;
+  line-height: 61px;
   font-size: 50px;
   line-height: 65px;
   margin: 2.5rem 0 0;
 }
 
 h2 {
+  font-size: 40px;
   font-size: 30px;
   line-height: 50px;
   margin: 0 0 2rem;
@@ -642,6 +644,7 @@ button:focus,
 }
 
 .scroll-top-to {
+  border-radius: 1rem;
   position: fixed;
   right: 20px;
   bottom: 50px;
@@ -657,7 +660,8 @@ button:focus,
   display: none;
 }
 .scroll-top-to:hover {
-  background: #fbdb06;
+  background: #6d3100;
+  transition: ease-in-out 0.5s;
 }
 @media (max-width: 768px) {
   .scroll-top-to {
@@ -2005,4 +2009,10 @@ hr {
   text-align: center;
 
   justify-content: center;
+}
+.pad-acerce {
+  padding: 3rem;
+}
+.img__poocoin {
+  margin-right: 1rem;
 }
