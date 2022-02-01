@@ -39,13 +39,15 @@ h6 {
 }
 
 h1 {
-  font-size: 45px;
-  line-height: 61px;
+  font-size: 50px;
+  line-height: 65px;
+  margin: 2.5rem 0 0;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
   line-height: 50px;
+  margin: 0 0 2rem;
 }
 
 h3 {
@@ -68,6 +70,7 @@ cite {
   font-size: 14px;
   font-style: normal;
 }
+
 
 .lora {
   font-family: "Lora", serif;
@@ -647,7 +650,7 @@ button:focus,
   height: 40px;
   line-height: 40px;
   text-align: center;
-  background: #2e7eed;
+  background: #b25a14;
   color: #fff;
   transition: 0.3s;
   z-index: 999556;
@@ -655,7 +658,7 @@ button:focus,
   display: none;
 }
 .scroll-top-to:hover {
-  background: #333;
+  background: #fbdb06;
 }
 @media (max-width: 768px) {
   .scroll-top-to {
@@ -980,10 +983,10 @@ button:focus,
 }
 
 .video-promo {
-  padding: 150px 0;
+  padding: 100px 0;
 }
 .video-promo .content-block {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   text-align: center;
 }
@@ -1938,6 +1941,10 @@ hr {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.img__poocoin{
+  margin-right: 0.8rem;
+}
 
 .btn-lion1 {
   width: 300px;
