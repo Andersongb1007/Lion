@@ -71,7 +71,6 @@ cite {
   font-style: normal;
 }
 
-
 .lora {
   font-family: "Lora", serif;
   font-style: italic;
@@ -1942,7 +1941,7 @@ hr {
 }
 /*# sourceMappingURL=style.css.map */
 
-.img__poocoin{
+.img__poocoin {
   margin-right: 0.8rem;
 }
 
@@ -2004,5 +2003,6 @@ hr {
 .social-logo {
   margin: 0 auto;
   text-align: center;
+
   justify-content: center;
 }
