@@ -34,7 +34,7 @@ h4,
 h5,
 h6 {
   font-family: "Open Sans", sans-serif;
-  color: #000;
+  color: #fff;
   font-weight: 300;
 }
 h1 {
@@ -97,6 +97,23 @@ ul.app-badge li a img {
   }
 }
 
+.content__img{
+  padding: 3rem;
+  align-items: center;
+}
+
+.quema__img{
+  width: 100%;
+}
+
+.tokenomics__img{
+  width: 100%;
+}
+
+.token__li{
+  list-style: none;
+}
+
 ul.post-tag {
   margin-bottom: 20px;
 }
@@ -135,6 +152,7 @@ body {
   overflow-x: hidden;
   background-color: #242424;
 }
+
 
 .shadow,
 .coming-soon .block .count-down .syotimer-cell,
