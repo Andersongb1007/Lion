@@ -97,20 +97,20 @@ ul.app-badge li a img {
   }
 }
 
-.content__img{
+.content__img {
   padding: 3rem;
   align-items: center;
 }
 
-.quema__img{
+.quema__img {
   width: 100%;
 }
 
-.tokenomics__img{
+.tokenomics__img {
   width: 100%;
 }
 
-.token__li{
+.token__li {
   list-style: none;
 }
 
@@ -152,7 +152,6 @@ body {
   overflow-x: hidden;
   background-color: #242424;
 }
-
 
 .shadow,
 .coming-soon .block .count-down .syotimer-cell,
@@ -1985,6 +1984,10 @@ hr {
   background-color: #fbdb06;
   transition: ease-in 0.3s;
 }
+.navbar-toggler,
+.ti-menu {
+  color: #fff;
+}
 .btn-lion2 {
   width: 300px;
   height: 45px;
@@ -2008,10 +2011,8 @@ hr {
 .trabajamos-trust,
 .trabajamos-metamask,
 .trabajamos-pancakeswap {
-  width: 200px;
-  padding: 1.5rem;
-  margin: 2rem;
-  align-items: center;
+  width: 150px;
+  padding-top: 80px;
 }
 .trabajamos-poocoin {
   width: 120px;
