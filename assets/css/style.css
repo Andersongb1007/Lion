@@ -97,17 +97,25 @@ ul.app-badge li a img {
   }
 }
 
-.content__img {
-  padding: 3rem;
-  align-items: center;
+.feature-content{
+  padding: 0 2.5rem;
 }
 
+
 .quema__img {
-  width: 100%;
+  width: 300px;
+  height: 250px;
 }
 
 .tokenomics__img {
-  width: 100%;
+  width: 250px;
+  height: 250px;
+}
+
+.img__content{
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .token__li {
@@ -2034,7 +2042,7 @@ hr {
   justify-content: center;
 }
 .pad-acerce {
-  padding: 3rem;
+  padding: 2.5rem;
 }
 .img__poocoin {
   margin-right: 1rem;

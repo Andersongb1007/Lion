@@ -24,6 +24,9 @@
     <!-- CUSTOM CSS -->
     <link href="./assets/css/style.css" rel="stylesheet">
 
+	<!--SCROLL JS-->
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
 </head>
 
 <body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
@@ -38,21 +41,32 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 		<ul class="navbar-nav ml-auto">
 			<li class="nav-item active">
-			<a class="nav-link" href="#banner">Inicio</a>
+				<a class="nav-link" href="#banner">Inicio</a>
 			</li>
 			
 			<li class="nav-item ">
-			<a class="nav-link white" href="#">Acerca de</a>
+				<a class="nav-link white" href="#about">Acerca de</a>
 			</li>
+
+		<!--<li class="nav-item">
+				<a class="nav-link" href="#quema">Quema</a>
+			</li> -->
+
 			<li class="nav-item">
-			<a class="nav-link" href="#trabajamos-con">tecnologías</a>
+				<a class="nav-link" href="#tokenomics">Tokenomics</a>
+			</li>
+
+			<li class="nav-item">
+				<a class="nav-link" href="#trabajamos-con">Tecnologías</a>
 			</li>
 		</ul>
 		</div>
 	</div>
 	</nav>
+
+
 <!--====================================
-=            Hero Section            =
+=            INICIO           =
 =====================================-->
 <section id="banner" class="section gradient-banner">
 	<div class="shapes-container">
@@ -90,23 +104,27 @@
 		</div>
 	</div>
 </section>
-<!--====  End of Hero Section  ====-->
+
+
 <!--==================================
-=            Descripcion de Lion token          =
+=            ACERCA DE          =
 ===================================-->
-<section class="feature section pt-0">
+<section id="about" class="feature section pt-0">
 	<div class="container pad-acerce">
 		<h2 class="text-white text-center">Acerca de Lion Token</h2>
             <p class="text-justify">Es un token alojado en la red de Binance Smart Chain (BSC) que tiene como objetivo llegar a crear una red de criptomonedas capaces de ser minadas bajo el consenso POW. Este token se encuentra disponible en cualquier wallet descentralizada.</p>
 	</div>
 </section>
 
-<!--QUEMA DE TOKENS-->
-<section class="feature section pt-0">
+
+<!--==================================
+=            QUEMA DE TOKENS         =
+===================================-->
+<section id="quema" class="feature section pt-0">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 ml-auto justify-content-center">
-				<div class="content__img">
+				<div class="img__content">
 					<img class="quema__img" src="assets/images/quema.png" alt="subida del precio">
 				</div>
 			</div>
@@ -120,9 +138,11 @@
 		</div>
 </section>
 
-<!--Tokenomics-->
 
-<section class="feature section pt-0">
+<!--==================================
+=            TOKENOMICS         =
+===================================-->
+<section id="tokenomics" class="feature section pt-0">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 ml-auto align-self-center">
@@ -137,7 +157,7 @@
 				</div>
 			</div>
 			<div class="col-lg-6 mr-auto justify-content-center">
-				<div class="image-content">
+				<div class="img__content">
 					<img class="tokenomics__img" src="assets/images/Tokenomics.png" alt="Tokenomics">
 				</div>
 			</div>
@@ -145,8 +165,9 @@
 	</div>
 </section>
 
+
 <!--=================================
-=            Trabajamos Con          =
+=            TRABAJAMOS CON          =
 ==================================-->
 <section id="trabajamos-con" class="section bg-1">
 	<div class="container">
@@ -175,9 +196,10 @@
 		</div>
 	</div>
 </section>
-<!--====  End of Video Promo  ====-->
+
+
 <!--============================
-=            Footer            =
+=            FOOTER            =
 =============================-->
 <footer>
 	<div class="footer-main">
@@ -225,5 +247,12 @@
 <script src="./assets/plugins/syotimer/jquery.syotimer.min.js"></script>
 <script src="./assets/plugins/aos/aos.js"></script>
 <script src="./assets/js/script.js"></script>
+
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+        speedAsDuration: true,
+      });
+</script>
 </body>
 </html>
