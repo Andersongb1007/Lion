@@ -97,10 +97,9 @@ ul.app-badge li a img {
   }
 }
 
-.feature-content{
+.feature-content {
   padding: 0 2.5rem;
 }
-
 
 .quema__img {
   width: 300px;
@@ -112,7 +111,7 @@ ul.app-badge li a img {
   height: 250px;
 }
 
-.img__content{
+.img__content {
   align-items: center;
   display: flex;
   justify-content: center;
