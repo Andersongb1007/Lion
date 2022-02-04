@@ -457,7 +457,7 @@ button:focus,
 }
 .main-nav .navbar-nav .nav-item.active .nav-link {
   color: #fff;
-}
+}/*
 .main-nav .navbar-nav .nav-item.active .nav-link:before {
   content: "";
   background: #ff6a00;
@@ -471,7 +471,7 @@ button:focus,
   .main-nav .navbar-nav .nav-item.active .nav-link:before {
     display: none;
   }
-}
+}*/
 .main-nav .dropdown {
   position: relative;
 }
