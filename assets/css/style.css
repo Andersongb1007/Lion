@@ -2046,14 +2046,21 @@ hr {
 .img__poocoin {
   margin-right: 1rem;
 }
+.p-b-1 {
+  padding-bottom: 15px;
+}
 .oferta {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
   font-size: 15px;
+  padding: 10px;
+  border-radius: 1rem;
 }
 .oferta:hover {
   color: #fff;
+  background-color: #b25a14;
+  transition: ease-in 0.5s;
 }
 .p-t {
   padding-top: 5rem;
