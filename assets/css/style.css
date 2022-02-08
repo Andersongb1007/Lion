@@ -457,7 +457,7 @@ button:focus,
 }
 .main-nav .navbar-nav .nav-item.active .nav-link {
   color: #fff;
-}/*
+} /*
 .main-nav .navbar-nav .nav-item.active .nav-link:before {
   content: "";
   background: #ff6a00;
@@ -2045,4 +2045,16 @@ hr {
 }
 .img__poocoin {
   margin-right: 1rem;
+}
+.oferta {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+.oferta:hover {
+  color: #fff;
+}
+.p-t {
+  padding-top: 5rem;
 }
