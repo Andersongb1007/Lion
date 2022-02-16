@@ -85,14 +85,15 @@ ul.app-badge li a img {
 }
 
 .tokenomics__img {
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 400px;
 }
 
 .img__content {
   align-items: center;
   display: flex;
   justify-content: center;
+  padding: 5rem;
 }
 
 .token__li {
