@@ -93,7 +93,7 @@ ul.app-badge li a img {
   align-items: center;
   display: flex;
   justify-content: center;
-  padding: 5rem;
+  padding: 5rem 0;
 }
 
 .token__li {
@@ -212,6 +212,10 @@ a:hover {
 @media (max-width: 480px) {
   .section-title p {
     width: 100%;
+  }
+  .tokenomics__img {
+    width: 300px;
+    height: 300px;
   }
 }
 
