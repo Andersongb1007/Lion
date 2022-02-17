@@ -84,7 +84,7 @@ ul.app-badge li a img {
   height: 250px;
 }
 
-.tokenomics__img {
+.pastel {
   width: 400px;
   height: 400px;
 }
@@ -213,9 +213,9 @@ a:hover {
   .section-title p {
     width: 100%;
   }
-  .tokenomics__img {
-    width: 300px;
-    height: 300px;
+  .pastel {
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -1229,9 +1229,21 @@ hr {
   text-align: center;
   background: #2e7eed;
 }
+
 .icon-box i {
   line-height: 80px;
   font-size: 30px;
+}
+
+.footer__content {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.contact__footer {
+  margin: auto;
 }
 
 .founder {
@@ -2018,7 +2030,7 @@ hr {
   text-align: justify;
 }
 .social-logo {
-  margin: 0 auto;
+  margin: auto;
   text-align: center;
 
   justify-content: center;

@@ -1,18 +1,16 @@
-
 (function ($) {
-  'use strict';
+  "use strict";
 
   // ----------------------------
   // AOS
   // ----------------------------
   AOS.init({
-    once: true
+    once: true,
   });
 
-  
-  $(window).on('scroll', function () {
-		//.Scroll to top show/hide
-    var scrollToTop = $('.scroll-top-to'),
+  $(window).on("scroll", function () {
+    //.Scroll to top show/hide
+    var scrollToTop = $(".scroll-top-to"),
       scroll = $(window).scrollTop();
     if (scroll >= 200) {
       scrollToTop.fadeIn(200);
@@ -20,29 +18,34 @@
       scrollToTop.fadeOut(100);
     }
   });
-	// scroll-to-top
-  $('.scroll-top-to').on('click', function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 500);
+  // scroll-to-top
+  $(".scroll-top-to").on("click", function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
     return false;
   });
 
-  $(document).ready(function() {
-
+  $(document).ready(function () {
     // navbarDropdown
     if ($(window).width() < 992) {
-      $('.main-nav .dropdown-toggle').on('click', function () {
-        $(this).siblings('.dropdown-menu').animate({
-          height: 'toggle'
-        }, 300);
+      $(".main-nav .dropdown-toggle").on("click", function () {
+        $(this).siblings(".dropdown-menu").animate(
+          {
+            height: "toggle",
+          },
+          300
+        );
       });
     }
 
     // -----------------------------
     //  Testimonial Slider
     // -----------------------------
-    $('.testimonial-slider').slick({
+    $(".testimonial-slider").slick({
       slidesToShow: 2,
       infinite: true,
       arrows: false,
@@ -54,67 +57,65 @@
           breakpoint: 991,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
+            slidesToScroll: 1,
+          },
+        },
+      ],
     });
-
 
     // -----------------------------
     //  Video Replace
     // -----------------------------
-    $('.video-box i').click(function () {
-      var video = '<iframe class="border-0" allowfullscreen src="' + $(this).attr('data-video') + '"></iframe>';
+    $(".video-box i").click(function () {
+      var video =
+        '<iframe class="border-0" allowfullscreen src="' +
+        $(this).attr("data-video") +
+        '"></iframe>';
       $(this).replaceWith(video);
     });
-
 
     // -----------------------------
     //  Count Down JS
     // -----------------------------
-    var syoTimer = $('#simple-timer');
+    var syoTimer = $("#simple-timer");
     if (syoTimer) {
-      $('#simple-timer').syotimer({
+      $("#simple-timer").syotimer({
         year: 2023,
         month: 9,
         day: 1,
         hour: 0,
-        minute: 0
+        minute: 0,
       });
     }
-
 
     // -----------------------------
     //  Story Slider
     // -----------------------------
-    $('.about-slider').slick({
+    $(".about-slider").slick({
       slidesToShow: 1,
       infinite: true,
       arrows: false,
       autoplay: true,
       autoplaySpeed: 2000,
-      dots: true
+      dots: true,
     });
-
 
     // -----------------------------
     //  Quote Slider
     // -----------------------------
-    $('.quote-slider').slick({
+    $(".quote-slider").slick({
       slidesToShow: 1,
       infinite: true,
       arrows: false,
       autoplay: true,
       autoplaySpeed: 2000,
-      dots: true
+      dots: true,
     });
-
 
     // -----------------------------
     //  Client Slider
     // -----------------------------
-    $('.client-slider').slick({
+    $(".client-slider").slick({
       slidesToShow: 4,
       infinite: true,
       arrows: false,
@@ -126,33 +127,32 @@
           breakpoint: 0,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
-          }
+            slidesToScroll: 1,
+          },
         },
         {
           breakpoint: 575,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1
-          }
+            slidesToScroll: 1,
+          },
         },
         {
           breakpoint: 767,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2
-          }
+            slidesToScroll: 2,
+          },
         },
         {
           breakpoint: 991,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 2
-          }
-        }
-      ]
+            slidesToScroll: 2,
+          },
+        },
+      ],
     });
-
 
     // scroll
     // $('.scrollTo').on('click', function (e) {
@@ -162,13 +162,31 @@
     //     scrollTop: ($(target).offset().top)
     //   }, 500);
     // });
-
   });
-
 })(jQuery);
 
 /*SCROLL*/
 var scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
+});
+
+/*Grafica de pastel*/
+var grafica = document.getElementById("grafica");
+var myPieChart = new Chart(grafica, {
+  type: "pie",
+  data: {
+    labels: [
+      'Holders',
+      'Desarollo'
+    ],
+    datasets: [{
+      label: 'Distribución de tokens',
+      data: [1, 1],
+      backgroundColor: [
+        'rgb(251, 218, 4)',
+        'rgb(179, 91, 20)'
+      ],
+    }]
+  },
 });

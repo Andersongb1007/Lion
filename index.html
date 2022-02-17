@@ -24,6 +24,11 @@
 	<!-- CUSTOM CSS -->
 	<link href="./assets/css/style.css" rel="stylesheet">
 
+	<!--Chart JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+		integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 	<!--SCROLL JS-->
 	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
@@ -92,9 +97,9 @@
 				<div class="col-md-6 order-2 order-md-1 text-center text-md-left">
 					<h1 class="text-white font-weight-bold mb-4">Lion Token</h1>
 					<h2 class="text-white font-weight-bold mb-4">¡El token que te permitirá poder minarlo!</h2>
-					<p class="text-white mb-5">Contrato: 0x347586623140a47b8c4931f95a1f5cda88edec00</p>
+					<p class="text-white mb-5">Contrato: 0x54b19cca26b8502478F22805b6b35D8b94C9ca72</p>
 
-					<a href="https://pancakeswap.finance/swap?outputCurrency=0x347586623140a47b8c4931f95a1f5cda88edec00"
+					<a href="https://pancakeswap.finance/swap?outputCurrency=0x54b19cca26b8502478F22805b6b35D8b94C9ca72"
 						class="btn btn-lion1 " target="_blank">
 						<p class="text-dark"><img src="./assets/images/pancakeswap.png " alt="Logo de Pancakeswap"
 								width="50px"> Comprar en Pancakeswap</p>
@@ -102,7 +107,7 @@
 
 					<a href="https://shoppy.gg/product/GZnwRWw" class="btn btn-lion2" target="_blank">
 						<p class="text-dark"><img src="./assets/images/bitcoin.png" class="img__poocoin"
-								alt="Logo de Poocoin" width="30px"> Comprar con BTC</p>
+								alt="Logo de Poocoin" width="30px"> Comprar con cryptos</p>
 					</a>
 					<h3 class="text-white font-weight-bold mb-4 p-t-2">¡Compra con BTC, ETH, BNB, LTC y muchas más en
 						estas plataformas! </h3>
@@ -147,8 +152,7 @@
 						<p>El token se encontrará distribuido en</p>
 						<ul class="token__ul">
 							<li class="token__li">1% Holders</li>
-							<li class="token__li">1% Quema</li>
-							<li class="token__li">2% Desarrollo y Marketing</li>
+							<li class="token__li">1% Desarrollo</li>
 						</ul>
 						<p>
 							Los holders de LION recibirán una pequeña recompensa por cada transacción que sea llevada a
@@ -164,7 +168,10 @@
 				</div>
 				<div class="col-lg-6 mr-auto justify-content-center">
 					<div class="img__content">
-						<img class="tokenomics__img" src="assets/images/Tokenomics.png" alt="Tokenomics">
+						<div class="pastel">
+							<canvas id="grafica"></canvas>
+							<!--<img class="tokenomics__img" src="assets/images/Tokenomics.png" alt="Tokenomics">-->
+						</div>
 					</div>
 				</div>
 			</div>
@@ -241,18 +248,11 @@
 	<footer>
 		<div class="footer-main">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 col-md-12 m-md-auto align-self-center">
-						<div class="block social-logo">
-							<a href="#banner"><img src="./assets/logo.png" alt="footer-logo"></a>
-							<!-- Social Site Icons -->
+				<div class="footer__content">
+
+					<div class="block social-logo">
+						<div class="icon__ig">
 							<ul class="social-icon list-inline">
-								<!--<li class="list-inline-item">
-									<a href="#"><i class="ti-facebook"></i></a>
-								</li>
-								<li class="list-inline-item">
-									<a href="#"><i class="ti-twitter"></i></a>
-								</li>-->
 								<li class="list-inline-item">
 									<a href="https://www.instagram.com/lion_token/" target="_blank"><i
 											class="ti-instagram"></i></a>
@@ -260,7 +260,18 @@
 							</ul>
 						</div>
 					</div>
+
+
+					<div class="block social-logo">
+						<a href="#banner"><img src="./assets/logo.png" alt="footer-logo"></a>
+					</div>
+
+
+					<div class="contact__footer">
+						<p>Correo: info@lion-token.net</p>
+					</div>
 				</div>
+				
 				<div class="container">
 					<p class="res-legal">DESCARGO DE RESPONSABILIDAD LEGAL: Ninguna información en este sitio web debe
 						interpretarse como un asesoramiento legal o financiero. Tenga en cuenta que siempre hay riesgos
