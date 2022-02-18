@@ -183,8 +183,10 @@ a:hover {
   background: url(../images/background.jpg) fixed no-repeat;
   background-position: center;
   background-size: cover;
+  /*
   width: 100%;
   height: 100vh;
+  */
 }
 
 .bg-coming-soon {
@@ -214,8 +216,8 @@ a:hover {
     width: 100%;
   }
   .pastel {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -578,7 +580,7 @@ button:focus,
   }
 }
 .footer-main .block img {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 .footer-main .block img #small-Apps {
   fill: red;
@@ -594,11 +596,13 @@ button:focus,
   text-align: center;
   line-height: 38px;
 }
+/*
 @media (max-width: 768px) {
   .footer-main .block {
-    margin-bottom: 40px;
+    margin-bottom: px;
   }
 }
+*/
 .footer-main .block-2 h6 {
   font-weight: bold;
   font-size: 14px;
@@ -1238,12 +1242,9 @@ hr {
 .footer__content {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-items: center;
-}
-
-.contact__footer {
-  margin: auto;
+  margin-bottom: 30px;
 }
 
 .founder {
@@ -1465,6 +1466,19 @@ hr {
     text-align: center;
     margin-left: 0;
     margin-top: 20px;
+  }
+  .footer__content {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 3fr);
+    justify-items: center;
+    margin-bottom: 30px;
+  }
+  .correo {
+    margin-bottom: 20px;
+  }
+  .footer-main .block img {
+    margin-bottom: 20px;
   }
 }
 .blog-single .about-author .media .media-body p {
