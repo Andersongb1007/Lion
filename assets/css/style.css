@@ -1242,7 +1242,7 @@ hr {
 .footer__content {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   margin-bottom: 30px;
 }
@@ -1469,7 +1469,7 @@ hr {
   }
   .footer__content {
     display: grid;
-    gap: 1.5rem;
+    gap: 2rem;
     grid-template-columns: repeat(1, 3fr);
     justify-items: center;
     margin-bottom: 30px;
@@ -2043,10 +2043,17 @@ hr {
 .res-legal {
   text-align: justify;
 }
+
 .social-logo {
   margin: auto;
   text-align: center;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
 
+.social-icon {
+  margin: auto;
+  text-align: center;
   justify-content: center;
 }
 .pad-acerce {
