@@ -172,21 +172,29 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 /*Grafica de pastel*/
+
 var grafica = document.getElementById("grafica");
 var myPieChart = new Chart(grafica, {
-  type: "pie",
+  type: "doughnut",
   data: {
-    labels: [
-      'Holders',
-      'Desarollo'
-    ],
+    labels: ['Equipo de desarrollo','Marketing','Holders','Pool' ],
     datasets: [{
       label: 'Distribución de tokens',
-      data: [1, 1],
+      data: [50,35,10,5 ],
       backgroundColor: [
-        'rgb(251, 218, 4)',
-        'rgb(179, 91, 20)'
+        'rgb(27, 106, 255)',
+        'rgb(63%, 19%, 97%)',
+        'rgb(16%, 94%, 100%)',
+        'rgb(98%, 19%, 51%)',
       ],
+      borderWidth:5,
+      borderColor:[
+        'rgba(0,0,0,0)',
+      ]
     }]
   },
+  options: {
+    cutout: '90%',
+  }
 });
+

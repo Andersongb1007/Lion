@@ -26,9 +26,7 @@
 	<link href="./assets/css/style.css" rel="stylesheet">
 
 	<!--Chart JS-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
-		integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
 
 	<!--SCROLL JS-->
 	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
@@ -56,6 +54,10 @@
 
 					<li class="nav-item">
 						<a class="nav-link" href="#tokenomics">Tokenomics</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#roadmap">Roadmap</a>
 					</li>
 
 					<li class="nav-item">
@@ -144,34 +146,212 @@
 	<!--==================================
 =            TOKENOMICS         =
 ===================================-->
-	<section id="tokenomics" class="feature section p-t">
+	<section id="tokenomics" class="feature section p-t ">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 ml-auto align-self-center">
-					<div class="feature-content">
+				<div class="col-lg-6 mr-auto justify-content-center">
+					<canvas id="grafica"></canvas>
+				</div>
+
+				<div class="col-lg-6 ml-auto align-self-center text-white">
+					<div class="d-flex flex-column bd-highlight mb-4">
 						<h2>Tokenomics</h2>
-						<p>El token se encontrará distribuido en</p>
-						<ul class="token__ul">
-							<li class="token__li">1% Holders</li>
-							<li class="token__li">1% Desarrollo</li>
-						</ul>
-						<p>
-							Los holders de LION recibirán una pequeña recompensa por cada transacción que sea llevada a
-							cabo.
-						</p>
-						<p>
-							El 1% será destinado a marketing, de esta forma se dará a conocer el proyecto a más personas
-							y se captará nuevos inversores para hacer crecer el proyecto.
-						</p>
-						<p>Los tokens son parte de la comunidad, los desarrolladores no tendrán acceso a estos mismos.
-							Sólo a los 2% de las fee para el marketing y desarrollo de la criptomoneda.</p>
+						<div class="d-flex flex-row bd-highlight mb-2">
+							<div class="p-2 bd-highlight align-self-cente">
+								<div class="circulo"></div>
+							</div>
+							<div class="p-2 bd-highlight">
+								<h5> Equipo de desarrollo: 50%</h5> 
+								<p>El 50% estara destinado al desarrollo, seguridad, transacciones y operaciones.</p>
+							</div>
+						</div>
+
+						<div class="d-flex flex-row bd-highlight mb-2">
+							<div class="p-2 bd-highlight align-self-cente">
+								<div class="circulo-2"></div>
+							</div>
+							<div class="p-2 bd-highlight">
+								<h5> Marketing: 35%</h5> 
+								<p>El 35% está destinado a Marketing, anuncios y publicidad para captar inversores.</p>
+							</div>
+
+						</div>
+						
+						<div class="d-flex flex-row bd-highlight mb-2">
+							<div class="p-2 bd-highlight align-self-cente">
+								<div class="circulo-3"></div>
+							</div>
+							<div class="p-2 bd-highlight">
+								<h5> Holders: 10%</h5> 
+								<p>El 10% será destinado a los Holders en forma de premio por retener LION en su billetera.</p>
+							</div>
+						</div>
+
+						<div class="d-flex flex-row bd-highlight mb-2">
+							<div class="p-2 bd-highlight align-self-cente">
+								<div class="circulo-4"></div>
+							</div>
+							<div class="p-2 bd-highlight">
+								<h5>Liquidity Pools: 5%</h5> 
+								<p>El 5% ira directamente a la Liquidity Pools (Pool de liquidez).</p>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		
+	</section>
+
+	
+
+	<!--==================================
+=            ROAPMAP         =
+===================================-->
+	<section id="roadmap" class="feature section p-t p-t">
+		<div class="container">
+			<h2 class="text-white text-center">Roadmap de Lion</h2>
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 ">
+				<div class="col margin-1">
+					<div class="barra">
+						<div class="row row-cols-2 ">
+							<div class="col-8 roadmap-desc">
+								<p class="text-roadmap">Desarrollo del token.</p>
+							</div>
+							<div class="col-4 ">
+								<i class="ti-check check-blue"></i>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 mr-auto justify-content-center">
-					<div class="img__content">
-						<div class="pastel">
-							<canvas id="grafica"></canvas>
-							<!--<img class="tokenomics__img" src="assets/images/Tokenomics.png" alt="Tokenomics">-->
+				<div class="col margin-1">
+					<div class="barra">
+						<div class="row row-cols-2 ">
+							<div class="col-8 roadmap-desc">
+								<p class="text-roadmap">Distribución del token. </p>
+							</div>
+							<div class="col-4 ">
+								<i class="ti-check check-blue"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col margin-1">
+					<div class="barra-2">
+						<div class="row row-cols-2 ">
+							<div class="col-8 roadmap-desc">
+								<p class="text-roadmap">Desarrollo de la criptomoneda.</p>
+							</div>
+							<div class="col-4 ">
+								<i class="ti-check check-blue-2"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col margin-1">
+					<div class="barra-2">
+						<div class="row row-cols-2 ">
+							<div class="col-8 roadmap-desc">
+								<p class="text-roadmap">Desarrollo de Blockchain propia.</p>
+							</div>
+							<div class="col-4 ">
+								<i class="ti-check check-blue-2"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col margin-1">
+					<div class="barra-2">
+						<div class="row row-cols-2 ">
+							<div class="col-8 roadmap-desc">
+								<p class="text-roadmap">Desarrollo de Wallet.</p>
+							</div>
+							<div class="col-4 ">
+								<i class="ti-check check-blue-2"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col margin-1">
+					<div class="barra-2">
+						<div class="row row-cols-2 ">
+							<div class="col-8 roadmap-desc">
+								<p class="text-roadmap">Implementación del algoritmo de mineado.</p>
+							</div>
+							<div class="col-4 ">
+								<i class="ti-check check-blue-2"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col margin-1">
+					<div class="barra-2">
+						<div class="row row-cols-2 ">
+							<div class="col-8 roadmap-desc">
+								<p class="text-roadmap">Integración del algoritmo a máquinas de minadora.</p>
+							</div>
+							<div class="col-4 ">
+								<i class="ti-check check-blue-2"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col margin-1">
+					<div class="barra-2">
+						<div class="row row-cols-2 ">
+							<div class="col-8 roadmap-desc">
+								<p class="text-roadmap">Implementación del algoritmo de mineado.</p>
+							</div>
+							<div class="col-4 ">
+								<i class="ti-check check-blue-2"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col margin-1">
+					<div class="barra-2">
+						<div class="row row-cols-2 ">
+							<div class="col-8 roadmap-desc">
+								<p class="text-roadmap">Integración del token a la Blockchain.</p>
+							</div>
+							<div class="col-4 ">
+								<i class="ti-check check-blue-2"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col margin-1">
+					<div class="barra-2">
+						<div class="row row-cols-2 ">
+							<div class="col-8 roadmap-desc">
+								<p class="text-roadmap">Integracion de la criptomoneda con el token.</p>
+							</div>
+							<div class="col-4 ">
+								<i class="ti-check check-blue-2"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col margin-1">
+					<div class="barra-2">
+						<div class="row row-cols-2 ">
+							<div class="col-8 roadmap-desc">
+								<p class="text-roadmap">Anuncio de staking.</p>
+							</div>
+							<div class="col-4 ">
+								<i class="ti-check check-blue-2"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col margin-1">
+					<div class="barra-2">
+						<div class="row row-cols-2 ">
+							<div class="col-8 roadmap-desc">
+								<p class="text-roadmap">Desarrollo del pool de minería.</p>
+							</div>
+							<div class="col-4 ">
+								<i class="ti-check check-blue-2"></i>
+							</div>
 						</div>
 					</div>
 				</div>
